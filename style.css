@@ -82,6 +82,11 @@ nav .icon a img:hover {
   width: 1200px;
   margin: 0 auto;
 }
+@media screen and (max-width: 768px) {
+  .pd_box {
+    width: 100%;
+  }
+}
 .pd_box .pd_name {
   font-size: 24px;
   font-weight: bold;
@@ -92,8 +97,23 @@ nav .icon a img:hover {
   gap: 10px;
   flex-wrap: wrap;
 }
+@media screen and (max-width: 414px) {
+  .pd_box .pd_list {
+    padding: 0 10px;
+  }
+}
 .pd_box .pd_list .car {
   width: 32%;
+}
+@media screen and (max-width: 768px) {
+  .pd_box .pd_list .car {
+    width: 49%;
+  }
+}
+@media screen and (max-width: 414px) {
+  .pd_box .pd_list .car {
+    width: 100%;
+  }
 }
 .pd_box .pd_list .car img {
   width: 100%;
@@ -107,4 +127,28 @@ nav .icon a img:hover {
   font-weight: bold;
   font-size: 20px;
   margin-left: 50px;
+}
+
+@media screen and (max-width: 768px) {
+  .slick-next {
+    right: 25px;
+  }
+  .slick-prev {
+    left: 25px;
+    z-index: 10;
+  }
+}
+@media screen and (max-width: 768px) {
+  .img_pc {
+    display: none !important;
+  }
+}
+
+.img_mb {
+  display: none !important;
+}
+@media screen and (max-width: 768px) {
+  .img_mb {
+    display: block !important;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -94,6 +94,9 @@ nav {
 .pd_box {
     width: 1200px;
     margin: 0 auto;
+    @media screen and(max-width:768px) {
+        width: 100%;
+    }
     .pd_name {
         font-size: 24px;
         font-weight: bold;
@@ -104,8 +107,17 @@ nav {
         gap: 10px;
         // 超過寬度，就往下
         flex-wrap: wrap;
+        @media screen and(max-width:414px) {
+            padding: 0 10px;
+        }
         .car {
             width: 32%;
+            @media screen and(max-width:768px) {
+                width: 49%;
+            }
+            @media screen and(max-width:414px) {
+                width: 100%;
+            }
             img {
                 width: 100%;
             }
@@ -122,5 +134,27 @@ nav {
                 }
             }
         }
+    }
+}
+// slick-next slick-arrow  slick-prev
+@media screen and(max-width:768px) {
+    .slick-next{
+        right:25px;
+    }
+    .slick-prev{
+        left:25px;
+        z-index:10;
+    } 
+}
+.img_pc{
+    @media screen and(max-width:768px) {
+        display: none !important;
+    }
+}
+
+.img_mb{
+    display: none !important;
+    @media screen and(max-width:768px) {
+        display: block !important;
     }
 }
