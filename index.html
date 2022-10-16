@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="./style.css">
 
 </head>
- 
+
 <body>
 
     <nav data-aos="flip-down" data-aos-duration="3000">
 
-        <a  href="" class="title">James</a>
+        <a href="" class="title">James</a>
         <p>作品集</p>
         <div class="icon">
             <a href="">
@@ -32,7 +32,27 @@
                 <img src="./img/ig.png" alt="">
             </a>
         </div>
+        <img class="menu" src="./img/m.png" alt="">
     </nav>
+    <!-- 手機版選單 -->
+    <div class="mb-meun">
+        <img class="error" src="./img/error.png" alt="">
+        <div class="menubox">
+        <a href="">
+            <img src="./img/facebook.png" alt="">
+            <span>facebook</span>
+        </a>
+        <a href="">
+            <img src="./img/ig.png" alt="">
+            <span>IG</span>
+        </a>
+        <a href="">
+            <img src="./img/youtube.png" alt="">
+            <span>youtube</span>
+        </a>
+    </div>
+    </div>
+
 
     <!-- 輪播 -->
     <div class="slick">
@@ -46,8 +66,8 @@
     <!-- 關於我 -->
     <div class="about">
         <p class="a_title">關於我</p>
-        <h1 data-aos="zoom-in-up" data-aos-duration="1000"data-aos-mirror="true">James</h1>
-        <p class="p_content"  data-aos="zoom-in-up" data-aos-duration="3000">我是一位網頁設計師，專門客製化設計</p>
+        <h1 data-aos="zoom-in-up" data-aos-duration="1000" data-aos-mirror="true">James</h1>
+        <p class="p_content" data-aos="zoom-in-up" data-aos-duration="3000">我是一位網頁設計師，專門客製化設計</p>
         <a href="">關於我</a>
     </div>
 
@@ -57,42 +77,42 @@
             <p class="pd_name">作品集</p>
             <div class="pd_list">
                 <!-- 6個照片 -->
-                <div class="car" data-aos="flip-down"  data-aos-duration="2000"data-aos-delay="0">
+                <div class="car" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="0">
                     <img src="./img/pd1.jpg" alt="">
                     <div class="card_data">
                         <span class="card_smtitle">類型-戶外</span>
                         <span class="card_title">賽車1</span>
                     </div>
                 </div>
-                <div class="car" data-aos="flip-down"  data-aos-duration="2000"data-aos-delay="300">
+                <div class="car" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="300">
                     <img src="./img/pd2.jpg" alt="">
                     <div class="card_data">
                         <span class="card_smtitle">類型-戶外</span>
                         <span class="card_title">賽車2</span>
                     </div>
                 </div>
-                <div class="car" data-aos="flip-down"  data-aos-duration="2000"data-aos-delay="500">
+                <div class="car" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="500">
                     <img src="./img/pd3.jpg" alt="">
                     <div class="card_data">
                         <span class="card_smtitle">類型-戶外</span>
                         <span class="card_title">賽車3</span>
                     </div>
                 </div>
-                <div class="car" data-aos="flip-down"  data-aos-duration="2000"data-aos-delay="700">
+                <div class="car" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="700">
                     <img src="./img/pd4.jpg" alt="">
                     <div class="card_data">
                         <span class="card_smtitle">類型-戶外</span>
                         <span class="card_title">賽車4</span>
                     </div>
                 </div>
-                <div class="car" data-aos="flip-down"  data-aos-duration="2000"data-aos-delay="900">
+                <div class="car" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="900">
                     <img src="./img/pd5.jpg" alt="">
                     <div class="card_data">
                         <span class="card_smtitle">類型-戶外</span>
                         <span class="card_title">賽車5</span>
                     </div>
                 </div>
-                <div class="car" data-aos="flip-down"  data-aos-duration="2000"data-aos-delay="1100">
+                <div class="car" data-aos="flip-down" data-aos-duration="2000" data-aos-delay="1100">
                     <img src="./img/pd6.jpg" alt="">
                     <div class="card_data">
                         <span class="card_smtitle">類型-戶外</span>
@@ -108,6 +128,8 @@
     <!-- 輪播 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- 連結自己的外部js -->
+    <script src="./all.js"></script>
     <script>
         // 啟動AOS
         AOS.init();
