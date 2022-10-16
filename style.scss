@@ -66,21 +66,24 @@ nav {
     @media screen and(max-width:500px) {
         display: none;
         flex-direction: column;
-       justify-content: center;
-       align-items: center;
+        justify-content: center;
+        align-items: center;
         position: fixed;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
+        // r,g,b色碼、透明度
         background: rgba(255, 255, 255, 0.7);
+        // 層級
         z-index: 99;
     }
-    .error{
+    .error {
         @media screen and(max-width:500px) {
-           position: absolute;
-           right: 42px;
-           top: 10px;
+            //    定位
+            position: absolute;
+            right: 42px;
+            top: 10px;
         }
     }
     img {
