@@ -20,7 +20,10 @@ nav {
     width: 100%;
     z-index: 99;
     background-color: #fff;
-    
+    @media screen and(max-width:500px) {
+        padding: 10px 0;
+    }
+
     .title {
         font-family: $font;
         font-size: 30px;
@@ -32,6 +35,9 @@ nav {
         }
     }
     .icon {
+        @media screen and(max-width:500px) {
+            display: none;
+        }
         a {
             text-decoration: none;
             img {
@@ -43,6 +49,54 @@ nav {
                 }
                 margin: 0 20px;
             }
+        }
+    }
+    .menu {
+        display: none;
+        @media screen and(max-width:500px) {
+            display: block;
+            width: 40px;
+            height: 40px;
+        }
+    }
+}
+// 手機版選單
+.mb-meun {
+    display: none;
+    @media screen and(max-width:500px) {
+        display: none;
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.7);
+        z-index: 99;
+    }
+    .error{
+        @media screen and(max-width:500px) {
+           position: absolute;
+           right: 42px;
+           top: 10px;
+        }
+    }
+    img {
+        @media screen and(max-width:500px) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+    a {
+        @media screen and(max-width:500px) {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 10px;
+            text-decoration: none;
+            color: #000;
         }
     }
 }
@@ -139,21 +193,21 @@ nav {
 }
 // slick-next slick-arrow  slick-prev
 @media screen and(max-width:768px) {
-    .slick-next{
-        right:25px;
+    .slick-next {
+        right: 25px;
     }
-    .slick-prev{
-        left:25px;
-        z-index:10;
-    } 
+    .slick-prev {
+        left: 25px;
+        z-index: 10;
+    }
 }
-.img_pc{
+.img_pc {
     @media screen and(max-width:768px) {
         display: none !important;
     }
 }
 
-.img_mb{
+.img_mb {
     display: none !important;
     @media screen and(max-width:768px) {
         display: block !important;
